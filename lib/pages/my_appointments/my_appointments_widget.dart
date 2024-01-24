@@ -5,17 +5,14 @@ import '/components/empty_list/empty_list_widget.dart';
 import '/components/main_logo/main_logo_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'my_appointments_model.dart';
 export 'my_appointments_model.dart';
 
 class MyAppointmentsWidget extends StatefulWidget {
-  const MyAppointmentsWidget({Key? key}) : super(key: key);
+  const MyAppointmentsWidget({super.key});
 
   @override
   _MyAppointmentsWidgetState createState() => _MyAppointmentsWidgetState();
@@ -60,12 +57,12 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
           await showModalBottomSheet(
             isScrollControlled: true,
             backgroundColor: Colors.transparent,
-            barrierColor: Color(0x00000000),
+            barrierColor: const Color(0x00000000),
             context: context,
             builder: (context) {
               return Padding(
                 padding: MediaQuery.viewInsetsOf(context),
-                child: Container(
+                child: SizedBox(
                   height: double.infinity,
                   child: BookAppointmentWidget(
                     userProfile: currentUserReference,
@@ -92,11 +89,11 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
         ),
         actions: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
             child: wrapWithModel(
               model: _model.mainLogoModel,
               updateCallback: () => setState(() {}),
-              child: MainLogoWidget(),
+              child: const MainLogoWidget(),
             ),
           ),
         ],
@@ -109,7 +106,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -147,7 +144,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                   List<AppointmentsRecord> listViewAppointmentsRecordList =
                       snapshot.data!;
                   if (listViewAppointmentsRecordList.isEmpty) {
-                    return Center(
+                    return const Center(
                       child: EmptyListWidget(),
                     );
                   }
@@ -159,7 +156,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                       final listViewAppointmentsRecord =
                           listViewAppointmentsRecordList[listViewIndex];
                       return Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 12.0),
                         child: StreamBuilder<AppointmentsRecord>(
                           stream: AppointmentsRecord.getDocument(
@@ -203,7 +200,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  boxShadow: [
+                                  boxShadow: const [
                                     BoxShadow(
                                       blurRadius: 4.0,
                                       color: Color(0x230E151B),
@@ -213,7 +210,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(12.0),
+                                  padding: const EdgeInsets.all(12.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     crossAxisAlignment:
@@ -226,7 +223,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                         children: [
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(4.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 listViewAppointmentsRecord
@@ -248,7 +245,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   4.0, 4.0, 4.0, 0.0),
                                           child: Text(
                                             valueOrDefault<String>(
@@ -279,7 +276,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                                   BorderRadius.circular(20.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       8.0, 0.0, 16.0, 0.0),
                                               child: Row(
@@ -287,7 +284,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(8.0, 4.0,
                                                                 0.0, 4.0),
                                                     child: Text(
@@ -308,7 +305,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(4.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(

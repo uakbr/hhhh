@@ -1,9 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
 
@@ -13,11 +10,7 @@ import '/backend/push_notifications/push_notifications_handler.dart'
     show PushNotificationsHandler;
 import '/index.dart';
 import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -82,38 +75,38 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? const NavBarPage() : const LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : LoginPageWidget(),
+              appStateNotifier.loggedIn ? const NavBarPage() : const LoginPageWidget(),
         ),
         FFRoute(
           name: 'loginPage',
           path: '/loginPage',
-          builder: (context, params) => LoginPageWidget(),
+          builder: (context, params) => const LoginPageWidget(),
         ),
         FFRoute(
           name: 'completeProfile',
           path: '/completeProfile',
-          builder: (context, params) => CompleteProfileWidget(),
+          builder: (context, params) => const CompleteProfileWidget(),
         ),
         FFRoute(
           name: 'forgotPassword',
           path: '/forgotPassword',
-          builder: (context, params) => ForgotPasswordWidget(),
+          builder: (context, params) => const ForgotPasswordWidget(),
         ),
         FFRoute(
           name: 'addAnotherProfile',
           path: '/addAnotherProfile',
-          builder: (context, params) => AddAnotherProfileWidget(),
+          builder: (context, params) => const AddAnotherProfileWidget(),
         ),
         FFRoute(
           name: 'onboarding',
           path: '/onboarding',
-          builder: (context, params) => OnboardingWidget(),
+          builder: (context, params) => const OnboardingWidget(),
         ),
         FFRoute(
           name: 'homePage',
@@ -122,7 +115,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             'test': getDoc(['asdfasdf'], AsdfasdfRecord.fromSnapshot),
           },
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'homePage')
+              ? const NavBarPage(initialPage: 'homePage')
               : HomePageWidget(
                   test: params.getParam('test', ParamType.Document),
                 ),
@@ -131,8 +124,8 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'myAppointments',
           path: '/myAppointments',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'myAppointments')
-              : MyAppointmentsWidget(),
+              ? const NavBarPage(initialPage: 'myAppointments')
+              : const MyAppointmentsWidget(),
         ),
         FFRoute(
           name: 'appointmentDetails',
@@ -146,7 +139,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'profilePage',
           path: '/profilePage',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'profilePage')
+              ? const NavBarPage(initialPage: 'profilePage')
               : ProfilePageWidget(
                   userProfile: params.getParam('userProfile',
                       ParamType.DocumentReference, false, ['users']),
@@ -164,8 +157,8 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'findSymptoms',
           path: '/findSymptoms',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'findSymptoms')
-              : FindSymptomsWidget(),
+              ? const NavBarPage(initialPage: 'findSymptoms')
+              : const FindSymptomsWidget(),
         ),
         FFRoute(
           name: 'appointmentDetailsProfile',
@@ -405,7 +398,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

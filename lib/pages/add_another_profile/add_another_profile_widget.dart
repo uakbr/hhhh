@@ -5,14 +5,11 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_another_profile_model.dart';
 export 'add_another_profile_model.dart';
 
 class AddAnotherProfileWidget extends StatefulWidget {
-  const AddAnotherProfileWidget({Key? key}) : super(key: key);
+  const AddAnotherProfileWidget({super.key});
 
   @override
   _AddAnotherProfileWidgetState createState() =>
@@ -86,16 +83,16 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
           'Add Another Profile',
           style: FlutterFlowTheme.of(context).headlineSmall,
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
       body: Container(
         width: MediaQuery.sizeOf(context).width * 1.0,
         height: MediaQuery.sizeOf(context).height * 1.0,
-        decoration: BoxDecoration(),
+        decoration: const BoxDecoration(),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -104,7 +101,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                   width: 120.0,
                   height: 120.0,
                   clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
                   child: Image.asset(
@@ -125,7 +122,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
                   child: TextFormField(
                     controller: _model.phoneNumberController1,
                     focusNode: _model.phoneNumberFocusNode1,
@@ -145,28 +142,28 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                             color: FlutterFlowTheme.of(context).secondaryText,
                           ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -175,7 +172,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                       filled: true,
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                           20.0, 24.0, 20.0, 24.0),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -188,7 +185,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
                   child: TextFormField(
                     controller: _model.phoneNumberController2,
                     focusNode: _model.phoneNumberFocusNode2,
@@ -208,28 +205,28 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                             color: FlutterFlowTheme.of(context).secondaryText,
                           ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -238,7 +235,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                       filled: true,
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                           20.0, 24.0, 20.0, 24.0),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -252,7 +249,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
                   child: TextFormField(
                     controller: _model.phoneNumberController3,
                     focusNode: _model.phoneNumberFocusNode3,
@@ -272,28 +269,28 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                             color: FlutterFlowTheme.of(context).secondaryText,
                           ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -302,7 +299,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                       filled: true,
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                           20.0, 24.0, 20.0, 24.0),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -315,7 +312,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
                   child: TextFormField(
                     controller: _model.phoneNumberController4,
                     focusNode: _model.phoneNumberFocusNode4,
@@ -335,28 +332,28 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                             color: FlutterFlowTheme.of(context).secondaryText,
                           ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -365,7 +362,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                       filled: true,
                       fillColor:
                           FlutterFlowTheme.of(context).secondaryBackground,
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                           20.0, 24.0, 20.0, 24.0),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -379,7 +376,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -391,17 +388,17 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Expanded(
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: FlutterFlowRadioButton(
                               options:
                                   ['Male', 'Female', 'Undisclosed'].toList(),
@@ -417,7 +414,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
                                   ),
-                              textPadding: EdgeInsetsDirectional.fromSTEB(
+                              textPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 12.0, 0.0),
                               buttonPosition: RadioButtonPosition.left,
                               direction: Axis.horizontal,
@@ -436,7 +433,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed('homePage');
@@ -446,9 +443,9 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                       width: 230.0,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
@@ -456,7 +453,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                                 color: FlutterFlowTheme.of(context).textColor,
                               ),
                       elevation: 3.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),

@@ -6,22 +6,17 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_datetime_picker_plus/flutter_datetime_picker_plus.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'edit_booking_model.dart';
 export 'edit_booking_model.dart';
 
 class EditBookingWidget extends StatefulWidget {
   const EditBookingWidget({
-    Key? key,
+    super.key,
     this.userAppointment,
-  }) : super(key: key);
+  });
 
   final AppointmentsRecord? userAppointment;
 
@@ -72,7 +67,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color(0xD60E151B),
           ),
           child: Column(
@@ -84,7 +79,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                 height: 720.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(16.0),
@@ -92,7 +87,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -106,7 +101,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                           color: FlutterFlowTheme.of(context).primaryBackground,
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Text(
                             'Edit Appointment',
@@ -118,7 +113,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 0.0),
                                 child: Text(
                                   'Edit the fields below in order to change your appointment.',
@@ -129,7 +124,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 0.0),
                           child: Text(
                             'Emails will be sent to:',
@@ -137,7 +132,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 12.0),
                           child: Text(
                             currentUserEmail,
@@ -150,7 +145,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 0.0),
                           child: TextFormField(
                             controller: _model.personsNameController,
@@ -169,21 +164,21 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               errorBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               focusedErrorBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
@@ -192,7 +187,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                               filled: true,
                               fillColor: FlutterFlowTheme.of(context)
                                   .primaryBackground,
-                              contentPadding: EdgeInsetsDirectional.fromSTEB(
+                              contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 24.0, 0.0, 24.0),
                             ),
                             style: FlutterFlowTheme.of(context)
@@ -207,7 +202,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 0.0),
                           child: FlutterFlowDropDown<String>(
                             controller: _model.dropDownValueController ??=
@@ -215,7 +210,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                               _model.dropDownValue ??=
                                   widget.userAppointment?.appointmentType,
                             ),
-                            options: [
+                            options: const [
                               'Type of Appointment',
                               'Doctors Visit',
                               'Routine Checkup',
@@ -244,7 +239,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                 FlutterFlowTheme.of(context).primaryBackground,
                             borderWidth: 2.0,
                             borderRadius: 8.0,
-                            margin: EdgeInsetsDirectional.fromSTEB(
+                            margin: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 4.0, 16.0, 4.0),
                             hidesUnderline: true,
                             isSearchable: false,
@@ -252,7 +247,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 0.0),
                           child: TextFormField(
                             controller: _model.problemDescriptionController,
@@ -271,21 +266,21 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               errorBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               focusedErrorBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
@@ -294,7 +289,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                               filled: true,
                               fillColor: FlutterFlowTheme.of(context)
                                   .primaryBackground,
-                              contentPadding: EdgeInsetsDirectional.fromSTEB(
+                              contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 24.0, 0.0, 24.0),
                             ),
                             style: FlutterFlowTheme.of(context).bodyMedium,
@@ -307,7 +302,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 0.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
@@ -316,31 +311,31 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                             highlightColor: Colors.transparent,
                             onTap: () async {
                               if (kIsWeb) {
-                                final _datePickedDate = await showDatePicker(
+                                final datePickedDate = await showDatePicker(
                                   context: context,
                                   initialDate: getCurrentTimestamp,
                                   firstDate: getCurrentTimestamp,
                                   lastDate: DateTime(2050),
                                 );
 
-                                TimeOfDay? _datePickedTime;
-                                if (_datePickedDate != null) {
-                                  _datePickedTime = await showTimePicker(
+                                TimeOfDay? datePickedTime;
+                                if (datePickedDate != null) {
+                                  datePickedTime = await showTimePicker(
                                     context: context,
                                     initialTime: TimeOfDay.fromDateTime(
                                         getCurrentTimestamp),
                                   );
                                 }
 
-                                if (_datePickedDate != null &&
-                                    _datePickedTime != null) {
+                                if (datePickedDate != null &&
+                                    datePickedTime != null) {
                                   safeSetState(() {
                                     _model.datePicked = DateTime(
-                                      _datePickedDate.year,
-                                      _datePickedDate.month,
-                                      _datePickedDate.day,
-                                      _datePickedTime!.hour,
-                                      _datePickedTime.minute,
+                                      datePickedDate.year,
+                                      datePickedDate.month,
+                                      datePickedDate.day,
+                                      datePickedTime!.hour,
+                                      datePickedTime.minute,
                                     );
                                   });
                                 }
@@ -397,7 +392,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Choose Date',
@@ -414,7 +409,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 4.0, 0.0, 0.0),
                                                 child: Text(
@@ -441,7 +436,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         2.0, 4.0, 0.0, 0.0),
                                                 child: Text(
@@ -473,7 +468,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 16.0, 0.0),
                                       child: Icon(
                                         Icons.date_range_outlined,
@@ -489,7 +484,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 24.0, 0.0, 20.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -504,9 +499,9 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                 options: FFButtonOptions(
                                   width: 100.0,
                                   height: 50.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context)
                                       .primaryBackground,
@@ -518,7 +513,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                             .primaryText,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
@@ -542,9 +537,9 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                 options: FFButtonOptions(
                                   width: 170.0,
                                   height: 50.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -555,7 +550,7 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
                                         fontWeight: FontWeight.w500,
                                       ),
                                   elevation: 3.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),

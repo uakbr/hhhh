@@ -6,19 +6,15 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'complete_profile_model.dart';
 export 'complete_profile_model.dart';
 
 class CompleteProfileWidget extends StatefulWidget {
-  const CompleteProfileWidget({Key? key}) : super(key: key);
+  const CompleteProfileWidget({super.key});
 
   @override
   _CompleteProfileWidgetState createState() => _CompleteProfileWidgetState();
@@ -45,15 +41,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           curve: Curves.bounceOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 19.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 19.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.bounceOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(1.0, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(1.0, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -71,15 +67,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           curve: Curves.easeInOut,
           delay: 50.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 20.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 20.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.easeInOut,
           delay: 50.ms,
           duration: 600.ms,
-          begin: Offset(1.0, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(1.0, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -97,15 +93,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           curve: Curves.easeInOut,
           delay: 100.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 20.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 20.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.easeInOut,
           delay: 100.ms,
           duration: 600.ms,
-          begin: Offset(1.0, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(1.0, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -123,15 +119,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           curve: Curves.easeInOut,
           delay: 200.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 40.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 40.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.easeInOut,
           delay: 200.ms,
           duration: 600.ms,
-          begin: Offset(1.0, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(1.0, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -149,15 +145,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           curve: Curves.easeInOut,
           delay: 200.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 60.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 60.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.easeInOut,
           delay: 200.ms,
           duration: 600.ms,
-          begin: Offset(1.0, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(1.0, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -175,15 +171,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           curve: Curves.easeInOut,
           delay: 250.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 50.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 50.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.easeInOut,
           delay: 250.ms,
           duration: 600.ms,
-          begin: Offset(1.0, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(1.0, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -201,15 +197,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           curve: Curves.easeInOut,
           delay: 300.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 50.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 50.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.easeInOut,
           delay: 300.ms,
           duration: 600.ms,
-          begin: Offset(1.0, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(1.0, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -227,15 +223,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           curve: Curves.bounceOut,
           delay: 350.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 40.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 40.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.bounceOut,
           delay: 350.ms,
           duration: 600.ms,
-          begin: Offset(1.0, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(1.0, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -253,15 +249,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           curve: Curves.bounceOut,
           delay: 400.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 40.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 40.0),
+          end: const Offset(0.0, 0.0),
         ),
         ScaleEffect(
           curve: Curves.bounceOut,
           delay: 400.ms,
           duration: 600.ms,
-          begin: Offset(1.0, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(1.0, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -337,7 +333,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
             'Complete Profile',
             style: FlutterFlowTheme.of(context).headlineSmall,
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -348,7 +344,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
             Container(
               width: MediaQuery.sizeOf(context).width * 1.0,
               height: MediaQuery.sizeOf(context).height * 1.0,
-              constraints: BoxConstraints(
+              constraints: const BoxConstraints(
                 maxWidth: 600.0,
               ),
               decoration: BoxDecoration(
@@ -360,7 +356,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                 ),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -369,7 +365,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         width: 120.0,
                         height: 120.0,
                         clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Image.asset(
@@ -383,7 +379,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation1']!),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 0.0),
                         child: TextFormField(
                           controller: _model.yourNameController,
@@ -395,28 +391,28 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             hintText: 'Please enter a valid number...',
                             hintStyle: FlutterFlowTheme.of(context).bodySmall,
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             errorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
@@ -425,7 +421,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             filled: true,
                             fillColor:
                                 FlutterFlowTheme.of(context).primaryBackground,
-                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 20.0, 24.0),
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
@@ -435,7 +431,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             animationsMap['textFieldOnPageLoadAnimation1']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 0.0),
                         child: TextFormField(
                           controller: _model.yourAgeController,
@@ -447,28 +443,28 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             hintText: 'i.e. 34',
                             hintStyle: FlutterFlowTheme.of(context).bodySmall,
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             errorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
@@ -477,7 +473,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             filled: true,
                             fillColor:
                                 FlutterFlowTheme.of(context).primaryBackground,
-                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 20.0, 24.0),
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
@@ -488,7 +484,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             animationsMap['textFieldOnPageLoadAnimation2']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 20.0, 0.0),
                         child: TextFormField(
                           controller: _model.ailmentsController,
@@ -500,28 +496,28 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             hintText: 'What types of allergies do you have..',
                             hintStyle: FlutterFlowTheme.of(context).bodySmall,
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             errorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
@@ -530,7 +526,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             filled: true,
                             fillColor:
                                 FlutterFlowTheme.of(context).primaryBackground,
-                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 20.0, 24.0),
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
@@ -540,7 +536,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             animationsMap['textFieldOnPageLoadAnimation3']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 12.0, 20.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -554,13 +550,13 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 12.0, 20.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: FlutterFlowRadioButton(
                                 options:
                                     ['Male', 'Female', 'Undisclosed'].toList(),
@@ -573,7 +569,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                                     FlutterFlowTheme.of(context).bodySmall,
                                 selectedTextStyle:
                                     FlutterFlowTheme.of(context).bodyMedium,
-                                textPadding: EdgeInsetsDirectional.fromSTEB(
+                                textPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 15.0, 0.0),
                                 buttonPosition: RadioButtonPosition.left,
                                 direction: Axis.horizontal,
@@ -598,23 +594,23 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         desktop: false,
                       ))
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 24.0, 0.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () async {
                               context.pushNamed('addAnotherProfile');
                             },
                             text: 'Add Another Profile',
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.add_rounded,
                               size: 15.0,
                             ),
                             options: FFButtonOptions(
                               width: 230.0,
                               height: 50.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -626,7 +622,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                                         .primaryText,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -637,7 +633,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                         child: StreamBuilder<UsersRecord>(
                           stream:
                               UsersRecord.getDocument(currentUserReference!),
@@ -673,15 +669,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                               options: FFButtonOptions(
                                 width: 230.0,
                                 height: 50.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primary,
                                 textStyle:
                                     FlutterFlowTheme.of(context).titleSmall,
                                 elevation: 3.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
